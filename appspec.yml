@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/lib/tomcat7/webapps
+    overwrite: yes
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
